@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Swit Kampung</title>
+  </head>
+  <body>
+    <header>
+      <h1>Swit Kampung</h1>
+    </header>
+    <p id="action-message">Tentukan pilihanmu.. Go!</p>
+    <!-- Start Gambar pilihan-->
+    <div class="choices">
+      <div class="choice" id="jem">
+        <img src="images/jempol.png" alt="Jempol" title="Jempol" />
+      </div>
+      <div class="choice" id="tel">
+        <img src="images/telunjuk.png" alt="Telunjuk" title="Telunjuk" />
+      </div>
+      <div class="choice" id="kel">
+        <img src="images/kelingking.png" alt="Kelingking" title="Kelingking" />
+      </div>
+    </div>
+    <!-- End gambar pilihan-->
+    <!--Start menampilkan keterangan hasil adu-->
+    <div class="result">
+      <p>Bagaimana hasilnya... <br />?</p>
+    </div>
+    <!--End menampilkan keterangan hasil adu-->
+    <!-- start papan skor-->
+    <div class="score-board">
+      <div class="badge" id="user-label">Kamu</div>
+      <div class="badge" id="computer-label">Komputer</div>
+      <span id="user-score">0</span>:<span id="computer-score">0</span>
+    </div>
+    <!--End papan skor-->
+    <!-- Start Tombol-->
+    <div class="tombol">
+      <button class="button" onclick="document.location.reload() ">
+        Replay
+      </button>
+      <button class="button" onclick="window.close()">End</button>
+    </div>
+    <!--End Tombol-->
+
+    <script src="app.js"></script>
+  </body>
+</html>
